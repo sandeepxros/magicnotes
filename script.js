@@ -1,4 +1,5 @@
 Show();
+
 function hasValue(key) {
   for (x = 0; x < localStorage.length; x++) {
     if (localStorage.key(x) === key) {
@@ -47,11 +48,12 @@ function Show() {
     html += `
    <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h5 class="card-title" id="editTitle">
                         ${JSON.parse(localStorage.key(x))[0]}</h5>
                         <small>${JSON.parse(localStorage.key(x))[1]}</small>
-                        <p class="card-text"> ${localStorage.getItem(localStorage.key(x))}</p>
+                        <p class="card-text" id="editText"> ${localStorage.getItem(localStorage.key(x))}</p>
                         <button id="${x}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
+                        <button id="${x}"onclick="editNote(this.id)" class="btn btn-primary">Edit Note</button>
                     </div>
                 </div>
    
@@ -100,7 +102,6 @@ function printS(i) {
    
    `
 
-
 }
 
 //compare strings if it have certain words 
@@ -114,4 +115,21 @@ function ifIncludes(string1, string2) {
   } else return false;
 }
 
+//features ...editing notes
+// function editNote(index){
+// let title = document.getElementById('editTitle');
+// let text = document.getElementById('editText');
+// let titleValue = title.innerText;
+// let textValue = text.innerText;
+// let btn =  document.getElementById(index);
+// btn.innerText = "save"; 
 
+
+// }
+
+/* curruntly this program having some bug and lacking some advance features I'm not quitting yet however I will take a pause, 
+important thing to do : 
+1- search is not working perfectly 
+improve feature such as connection with google drive to save notes onlie and so on 
+
+*/
