@@ -53,7 +53,7 @@ function Show() {
                         <small>${JSON.parse(localStorage.key(x))[1]}</small>
                         <p class="card-text" id="editText"> ${localStorage.getItem(localStorage.key(x))}</p>
                         <button id="${x}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
-                        <button id="${x}"onclick="editNote(this.id)" class="btn btn-primary">Edit Note</button>
+                        <!-- <button id="${x}"onclick="editNote(this.id)" class="btn btn-primary">Edit Note</button> -->
                     </div>
                 </div>
    
