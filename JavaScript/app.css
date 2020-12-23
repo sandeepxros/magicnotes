@@ -1,0 +1,150 @@
+:root{
+  --orange : #F27121;
+}
+/* body{ background-color: var(--orange);} */
+#navbar{
+    border-bottom:4px solid var(--orange);
+    height:90px;
+    z-index: 10000;  
+}
+.nav-link{
+    font-weight: 500;
+    border-radius: 2px;
+    color: #333;
+    text-align: center;
+
+
+}
+.nav-link:hover,.active-menu,#pills-home-tab[aria-selected="true"],#pills-contact-tab[aria-selected="true"],#pills-profile-tab[aria-selected="true"]{
+    background-color: var(--orange);
+    color: #fff !important;     
+}
+.btn-primary,.btn-primary:hover{
+    background-color: var(--orange) !important;
+    color: #fff !important; 
+    border-color: #F27121;
+}
+
+.img-rounded{
+    border-radius: 50%;
+}
+.img-border{
+    border: .7px dashed black;
+}
+.card-body{
+    background-color: rgba(255, 255, 255, 0.548);
+    position: relative;
+    margin-left: 2em;
+   
+}
+.tweet{
+    background-color: var(--orange);
+    color: #fff;
+    height: 300px;
+    overflow: hidden;   
+     
+}
+.tweet .leader{
+    font-size: 1.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.tweet > p{
+    color: #fff !important;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.tweet .small{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-style: italic;
+
+}
+.tweet .small:hover{
+    text-decoration: underline;
+}
+footer{
+
+    margin-top:2em;
+}
+.title{
+    font-size: 1.5em;
+    color:var(--orange);
+     font-weight: 700;
+
+     margin-bottom: 1.2em;
+}
+h2{
+    font-size: 1.2em;
+    color : #333;
+}
+li > i{
+    color : #F27121;
+}
+
+p{
+    color: #333!important;
+    font-weight: 600;
+}
+ 
+.brand > i {
+    background-color : rgb(187, 187, 187);
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+.brand > i:hover{
+    background-color: #F27121;
+}
+
+.base {
+    text-decoration: none;
+    color: #333;
+    padding: .25em 1em;
+    font-weight: 500;
+
+}
+.base:hover, .active{
+    color: #F27121;
+}
+.base > i{
+ background-color: #F27121;
+ color: #fff;
+ padding: 10px;
+ font-size: 2em;
+}
+.boss{
+    color: #F27121;
+    font-size: 2em !important;
+}
+.name{
+    color: rgba(0, 0, 0, 0.452) !important;
+    font-size: .7em;
+}
+.client{
+    background-color: rgba(0, 0, 0, 0.041);
+    padding: 2em;
+}
+.small{
+    color: #F27121;
+    text-decoration: none;
+    cursor: pointer;
+}
+.small:hover{
+    color: #F27121;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.display-5{
+    font-size: 2em !important;
+    font-weight: 700;
+    color: rgba(51, 51, 51, 0.726) !important;
+}
+.card-body{
+    color: #000; 
+    background-color: #fff;
+    border-radius: 1em;
+    font-weight: 200 !important;
+}
